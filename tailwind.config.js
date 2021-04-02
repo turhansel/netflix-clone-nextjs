@@ -10,7 +10,7 @@ module.exports = {
           "linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)), url(/hero-bg.jpeg)",
       }),
       fontFamily: {
-        sans: ["Roboto"],
+        roboto: ["Roboto"],
       },
     },
   },

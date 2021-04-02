@@ -5,11 +5,10 @@ export default function Home() {
   const [session, loading] = useSession(); //nextauth
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black bg-hero ">
+    <div className="flex flex-col sm:items-center md:items-center justify-center min-h-screen  bg-black bg-hero font-roboto">
       <Head>
         <title>Netflix Clone</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
@@ -21,7 +20,7 @@ export default function Home() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0.238 0.034 919.406 248.488"
-            className="w-28"
+            className="w-16 md:w-32 lg:w-48 ml-5"
           >
             <path
               fill="#e50914"
@@ -48,11 +47,11 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center ">
-        <h1 className="text-5xl font-medium text-white max-w-lg tracking-wide font-sans">
+      <main className="flex flex-col items-center justify-center flex-1 sm:px-20 text-center font-roboto">
+        <h1 className="text-5xl font-medium text-white max-w-lg tracking-wide">
           Unlimited movies, TV shows, and more.
         </h1>
-        <h2 className="text-2xl text-white mt-4 mb-8">
+        <h2 className="sm:text-2xl md:text-2xl text-white mt-4 mb-8">
           Watch anywhere. Cancel anytime.
         </h2>
         <p className="text-white">
@@ -62,7 +61,7 @@ export default function Home() {
         <div className="flex mt-4">
           <input
             placeholder="Email address"
-            className="bg-white p-4 min-w-[400px]"
+            className="bg-white sm:p-4 sm:min-w-[400px]"
           />
           <button
             className="flex items-center bg-[#e50914] text-white text-xl px-8"
